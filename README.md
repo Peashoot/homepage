@@ -4,7 +4,7 @@
 
 ## 🌟 特性
 
-- 💻 使用 Vue 3 Composition API 和 TypeScript 开发
+- 💻 使用 Vue 3 Composition API 和 TypeScript 开发 
 - 🎨 采用 Tailwind CSS 实现现代化 UI 设计
 - 📱 完全响应式设计，支持各种设备
 - 🚀 基于 Vite 构建，开发体验极佳
