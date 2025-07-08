@@ -7,7 +7,8 @@
 - 💻 使用 Vue 3 Composition API 和 TypeScript 开发
 - 🎨 采用 Tailwind CSS 实现现代化 UI 设计
 - 📱 完全响应式设计，支持各种设备
-- 🚀 基于 Vite 构建，开发体验极佳
+- �� 基于 Vite 构建，开发体验极佳
+- 🔒 个人信息配置文件化，保护隐私
 
 ## 📸 项目截图
 
@@ -57,12 +58,20 @@ git clone [repository-url]
 npm install
 \`\`\`
 
-3. 开发环境运行
+3. 配置个人信息
+\`\`\`bash
+# 复制配置文件模板
+cp src/config/profile.template.ts src/config/profile.ts
+
+# 编辑 profile.ts 文件，填入您的个人信息
+\`\`\`
+
+4. 开发环境运行
 \`\`\`bash
 npm run dev
 \`\`\`
 
-4. 构建生产版本
+5. 构建生产版本
 \`\`\`bash
 npm run build
 \`\`\`
@@ -78,6 +87,31 @@ npm run build
 - [ ] 集成更多社交媒体链接
 - [ ] 添加博客文章展示
 - [ ] 优化移动端体验
+
+## 🔒 个人信息配置
+
+项目使用配置文件管理个人信息，以保护隐私：
+
+1. 配置文件位置：
+   - 模板文件：`src/config/profile.template.ts`
+   - 实际配置：`src/config/profile.ts`（需要手动创建，已被 .gitignore 忽略）
+
+2. 配置项说明：
+   - `avatar`: 头像图片路径
+   - `nickname`: 显示的昵称
+   - `username`: 用户名
+   - `bio`: 个人简介
+   - `birthday`: 生日信息
+   - `constellation`: 星座
+   - `location`: 所在地
+   - `contactInfo`: 联系方式列表
+   - `skills`: 技能列表
+   - `timeline`: 个人履历时间线
+
+3. 使用方法：
+   1. 复制模板文件：`cp src/config/profile.template.ts src/config/profile.ts`
+   2. 编辑 `profile.ts`，填入个人信息
+   3. 确保 `profile.ts` 已被 .gitignore 忽略，不会被提交到代码仓库
 
 ## �� 许可证
 
