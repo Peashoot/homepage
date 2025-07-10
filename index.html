@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/avatar.jfif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DebugW的代码领域</title>
+    <title>Loading...</title>
+    <script type="module">
+      import profileConfig from './src/config/profile.ts'
+      document.title = profileConfig.title
+    </script>
   </head>
   <body>
     <div id="app"></div>

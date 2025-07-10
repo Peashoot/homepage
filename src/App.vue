@@ -3,6 +3,7 @@ import ProfileSidebar from './components/ProfileSidebar.vue'
 import PinnedProjects from './components/PinnedProjects.vue'
 import PersonalResume from './components/PersonalResume.vue'
 import TopNavbar from './components/TopNavbar.vue'
+import profileConfig from './config/profile'
 </script>
 
 <template>
@@ -30,8 +31,8 @@ import TopNavbar from './components/TopNavbar.vue'
     <!-- 页脚 -->
     <footer class="text-center text-gray-400 py-2 text-sm border-t bg-white">
       <a href="https://beian.miit.gov.cn/" target="_blank"
-        class="text-gray-400 hover:text-gray-600">浙ICP备2025170805号</a>
-      &nbsp;&nbsp;@2025 DebugW
+        class="text-gray-400 hover:text-gray-600">{{ profileConfig.icpText }}</a>
+      &nbsp;&nbsp;{{ profileConfig.copyright}}
     </footer>
   </div>
 </template>

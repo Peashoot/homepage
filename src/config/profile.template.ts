@@ -38,6 +38,9 @@ export interface ProfileConfig {
   birthday: string
   constellation: string
   location: string
+  title: string
+  icpText: string
+  copyright: string
   contactInfo: ContactItem[]
   skills: SkillItem[]
   timeline: TimelineItem[]
@@ -45,6 +48,9 @@ export interface ProfileConfig {
 }
 
 const profileConfig: ProfileConfig = {
+  title: 'Your title',
+  icpText: 'xICP备xxxxxxxxxxxx号',
+  copyright: '© 2025 Your name',
   avatar: '/path/to/your/avatar.jpg',
   nickname: '你的昵称',
   username: '用户名',
