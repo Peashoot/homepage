@@ -32,17 +32,8 @@
 </template>
 
 <script setup lang="ts">
-interface Project {
-  name: string
-  description: string
-  link: string
-  status: string
-  tags: string[]
-  language?: string
-  languageColorClass?: string
-  stars?: number
-  forks?: number
-}
+import type { ProjectItem } from '../config/profile.template'
+import profileConfig from '../config/profile'
 
 // 根据状态返回对应的样式类
 const getStatusClass = (status: string) => {
@@ -60,65 +51,8 @@ const getStatusClass = (status: string) => {
   }
 }
 
-const projects: Project[] = [
-  {
-    name: 'sunlight-backend',
-    description: 'Bathing in the sun light every day',
-    link: '#',
-    status: '已上线',
-    tags: ['Go'],
-    language: 'Go',
-    languageColorClass: 'bg-cyan-400',
-  },
-  {
-    name: 'YiYanLectureHall',
-    description: '偶滴一言堂（Java blog frame）',
-    link: '#',
-    status: '已上线',
-    tags: ['Java'],
-    language: 'Java',
-    languageColorClass: 'bg-yellow-600',
-  },
-  {
-    name: 'QuickMacro',
-    description: '简单按键精灵',
-    link: '#',
-    status: '开发中',
-    tags: ['C#'],
-    language: 'C#',
-    languageColorClass: 'bg-green-600',
-    stars: 5,
-    forks: 3,
-  },
-  {
-    name: 'pea-tool',
-    description: 'Peashoot的工具箱（年更项目）',
-    link: '#',
-    status: '开发中',
-    tags: ['Vue'],
-    language: 'Vue',
-    languageColorClass: 'bg-green-400',
-    stars: 1,
-  },
-  {
-    name: 'Myinx',
-    description: '自己随便写的类nginx的转发服务',
-    link: '#',
-    status: '停止维护',
-    tags: ['Go'],
-    language: 'Go',
-    languageColorClass: 'bg-cyan-400',
-  },
-  {
-    name: 'DailySyncWallpaper',
-    description: '每日定时更新bing壁纸',
-    link: '#',
-    status: '构思中',
-    tags: ['Go'],
-    language: 'Go',
-    languageColorClass: 'bg-cyan-400',
-  },
-]
+// 从配置文件获取项目数据
+const projects: ProjectItem[] = profileConfig.projects
 </script>
 
 <script lang="ts">

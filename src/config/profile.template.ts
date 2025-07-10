@@ -18,6 +18,18 @@ export interface TimelineItem {
   tags?: string[]
 }
 
+export interface ProjectItem {
+  name: string
+  description: string
+  link: string
+  status: '已上线' | '开发中' | '停止维护' | '构思中'
+  tags: string[]
+  language?: string
+  languageColorClass?: string
+  stars?: number
+  forks?: number
+}
+
 export interface ProfileConfig {
   avatar: string
   nickname: string
@@ -29,6 +41,7 @@ export interface ProfileConfig {
   contactInfo: ContactItem[]
   skills: SkillItem[]
   timeline: TimelineItem[]
+  projects: ProjectItem[]
 }
 
 const profileConfig: ProfileConfig = {
@@ -68,6 +81,19 @@ const profileConfig: ProfileConfig = {
       title: '标题',
       description: '描述',
       tags: ['标签1', '标签2']
+    }
+  ],
+  projects: [
+    {
+      name: '项目名称',
+      description: '项目描述',
+      link: 'https://github.com/yourusername/project',
+      status: '开发中',
+      tags: ['技术栈'],
+      language: '主要语言',
+      languageColorClass: 'bg-blue-400',
+      stars: 0,
+      forks: 0
     }
   ]
 }
