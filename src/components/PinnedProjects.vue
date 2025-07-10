@@ -2,7 +2,7 @@
   <section>
     <h2 class="text-lg font-semibold mb-3">Projects</h2>
     <div class="grid md:grid-cols-2 gap-3">
-      <div v-for="project in projects" :key="project.name" class="bg-white border border-gray-200 rounded-lg shadow p-3 flex flex-col justify-between">
+      <div v-for="project in projects" :key="project.name" class="bg-white border border-gray-200 rounded-lg shadow p-3 flex flex-col justify-between transition-all duration-200 hover:shadow-lg hover:border-blue-300 hover:scale-[1.02] cursor-pointer">
         <div>
           <div class="flex items-center mb-1.5">
             <span class="i-mdi:book-outline text-gray-400 mr-1.5"></span>
