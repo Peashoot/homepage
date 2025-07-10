@@ -1,0 +1,12 @@
+<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" xmlns="http://www.w3.org/2000/svg">
+  <!-- 圆润W字母 -->
+  <path d="M12 18 Q20 50 32 28 Q44 50 52 18" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 王字三条横线 -->
+  <line x1="22" y1="36" x2="42" y2="36" stroke-linecap="round" />
+  <line x1="20" y1="42" x2="44" y2="42" stroke-linecap="round" />
+  <line x1="24" y1="48" x2="40" y2="48" stroke-linecap="round" />
+  <!-- 王字竖线（略短） -->
+  <line x1="32" y1="36" x2="32" y2="52" stroke-linecap="round" />
+  <!-- 奖杯底座圆弧 -->
+  <path d="M24 56 Q32 60 40 56" stroke-linecap="round" />
+</svg> 
