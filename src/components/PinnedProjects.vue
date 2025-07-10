@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="text-lg font-semibold mb-3">Pinned</h2>
+    <h2 class="text-lg font-semibold mb-3">Projects</h2>
     <div class="grid md:grid-cols-2 gap-3">
       <div v-for="project in projects" :key="project.name" class="bg-white border border-gray-200 rounded-lg shadow p-3 flex flex-col justify-between">
         <div>
