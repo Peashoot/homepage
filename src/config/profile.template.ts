@@ -5,6 +5,13 @@ export interface ContactItem {
   displayText?: string
 }
 
+export interface ToolItem {
+  name: string
+  url: string
+  icon: string
+  description: string
+}
+
 export interface SkillItem {
   name: string
   imageUrl: string
@@ -42,6 +49,7 @@ export interface ProfileConfig {
   icpText: string
   copyright: string
   contactInfo: ContactItem[]
+  tools: ToolItem[]
   skills: SkillItem[]
   timeline: TimelineItem[]
   projects: ProjectItem[]
@@ -72,6 +80,20 @@ const profileConfig: ProfileConfig = {
       value: 'https://github.com/yourusername',
       isLink: true,
       displayText: 'github.com/yourusername'
+    }
+  ],
+  tools: [
+    {
+      name: '编辑器',
+      url: 'https://code.debugw.site',
+      icon: 'code',
+      description: '在线代码编辑器'
+    },
+    {
+      name: '网盘',
+      url: 'https://pan.debugw.site',
+      icon: 'cloud',
+      description: '云存储服务'
     }
   ],
   skills: [
